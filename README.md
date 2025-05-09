@@ -1,45 +1,88 @@
-# 🌐 WebCrawler Java GUI Project
+# 🌐 WebCrawler – Java GUI Crawler with Visualization, Analytics & PageRank
 
-A feature-rich Java-based web crawler with a Swing GUI. Crawls websites, visualizes structure, computes PageRank, and shows crawl analytics.
+[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com/)
+[![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 
-## 🚀 Features
-- GUI built with Swing
-- SQLite-backed storage
-- Robots.txt compliance
-- Depth-based & domain-based filtering
-- Crawl summary stats
-- Export to CSV
-- Real-time visual graph updates
-- PageRank computation
-
-## ⚙️ Technologies
-- Java (JDK 8+)
-- Eclipse IDE
-- SQLite via JDBC
-- Swing GUI
-
-## 🛠️ How to Run
-1. Open the project in **Eclipse**
-2. Add `sqlite-jdbc.jar` to your build path:
-   - Right-click Project → Build Path → Configure → Add External JARs → select `lib/sqlite-jdbc.jar`
-3. Run `CrawlerUI.java` as Java Application
-
-## 📦 Export
-You can export it as a runnable JAR from Eclipse:
-- File → Export → Runnable JAR
-
-## 📸 Demo
-![screenshot](screenshots/demo.png)
+> An advanced Java-based web crawler built with Swing GUI and SQLite backend. Visualizes link graphs, computes PageRank, and provides crawl analytics in real-time.
 
 ---
 
-### 7️⃣ (Optional) Add Demo Video
+## 🖥️ Project Overview
 
-Export a short MP4 or GIF showing:
-- Crawling a site
-- Live log + stats
-- Opening the graph visualization
+This application is a **desktop GUI web crawler** that:
+- Crawls starting from a given URL
+- Obeys crawl depth, keyword filters, max page limits
+- Visualizes the website graph (with zoom, search, export)
+- Displays crawl stats (pages, domains, link types)
+- Computes **PageRank** from the link graph
+- Respects `robots.txt` constraints
 
 ---
 
-Would you like me to generate a full `README.md` file for you (with markdown badges, links, etc.)?
+## ✨ Features
+
+✅ Swing GUI (Eclipse compatible)  
+✅ Live crawl logs  
+✅ SQLite-backed data persistence  
+✅ Graph-based link visualization  
+✅ PageRank computation  
+✅ Summary statistics panel  
+✅ Export crawl results to CSV or PNG  
+✅ Zoom/search in graph viewer  
+✅ `robots.txt` blocking compliance
+
+---
+
+## 🧰 Tech Stack
+
+| Tech | Purpose |
+|------|---------|
+| **Java (JDK 8+)** | Core language |
+| **Swing** | GUI framework |
+| **SQLite (via JDBC)** | Data storage |
+| **JGraph-style drawing** | Custom visualization |
+| **Eclipse IDE** | Project development |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Java 8+ installed
+- Eclipse (or any IDE)
+- [sqlite-jdbc](https://github.com/xerial/sqlite-jdbc) JAR file in `/lib`
+
+### Running the Project
+
+1. **Clone this repo** or download the ZIP  
+2. Open in Eclipse → File > Import > Existing Project  
+3. **Add JDBC JAR** to your build path:
+   - Right-click project → Build Path → Configure → Add External JARs → choose `sqlite-jdbc.jar`  
+4. **Run** the `Main.java` file (right-click → Run As → Java Application)
+
+---
+
+## 📸 Screenshots
+
+<img src="screenshots/ui.png" width="700"/>
+<img src="screenshots/graph.png" width="700"/>
+<img src="screenshots/stats.png" width="700"/>
+
+---
+
+## 📤 Export Options
+
+- CSV: Crawled page details
+- PNG: Link graph export
+- MP4/GIF: Demo walkthrough (optional)
+
+---
+
+## 📊 PageRank Support
+
+Each node in the crawl graph is scored using **PageRank**, highlighting important or well-connected URLs.
+
+---
+
+
