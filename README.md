@@ -63,20 +63,10 @@ This application is a **desktop GUI web crawler** that:
 
 ---
 
-## 📸 Screenshots
-
-<img src="screenshots/ui.png" width="700"/>
-<img src="screenshots/graph.png" width="700"/>
-<img src="screenshots/stats.png" width="700"/>
-
----
-
 ## 📤 Export Options
 
 - CSV: Crawled page details
 - PNG: Link graph export
-- MP4/GIF: Demo walkthrough (optional)
-
 ---
 
 ## 📊 PageRank Support
