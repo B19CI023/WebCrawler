@@ -1,0 +1,9 @@
+# Ignore Eclipse-specific and build files
+.classpath
+.project
+.settings/
+bin/
+*.class
+*.log
+*.db
+.DS_Store
