@@ -57,9 +57,10 @@ This application is a **desktop GUI web crawler** that:
 
 1. **Clone this repo** or download the ZIP  
 2. Open in Eclipse → File > Import > Existing Project  
-3. **Add JDBC JAR** to your build path:
-   - Right-click project → Build Path → Configure → Add External JARs → choose `sqlite-jdbc.jar`  
-4. **Run** the `Main.java` file (right-click → Run As → Java Application)
+3. Download these 2 files: `sqlite-jdbc.jar` and `jsoup-1.20.1.jar`
+4. **Add JDBC JAR** to your build path:
+   - Right-click project → Build Path → Configure → Add External JARs → choose `sqlite-jdbc.jar` and `jsoup-1.20.1.jar`
+5. **Run** the `Main.java` file (right-click → Run As → Java Application)
 
 ---
 
